@@ -12,11 +12,21 @@ import java.util.List;
 public class LibraryTest {
     @Test 
     public void testSomeLibraryMethod() {
-    	String[] a = {"a", "b", "c"};
-        List<String> list = Arrays.asList(a);
-        list.add("d");
-        list.add("e");
-        System.out.println(list);
+//    	String[] a = {"a", "b", "c"};
+//        List<String> list = Arrays.asList(a);
+//        list.add("d");
+//        list.add("e");
+//        System.out.println(list);
+        
+        
+        long x = 12L;
+        long y = 10L;
+        long b = -Math.floorDiv(x, -y);
+        System.out.println("b=" + b);
+        long c = (long) Math.ceil( 1.0 * x / y);
+        System.out.println("c=" + c);
+        long d = new Double(Math.ceil(1.0 * x / y)).longValue();
+        System.out.println("d=" + d);
     }
     
     
